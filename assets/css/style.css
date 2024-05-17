@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    text-align: center;
+    color: white;
+    font-size: 1%;
+    width: 100;
+    background: rgb(2,0,36);
+    background: linear-gradient(297deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 61%, rgba(102,130,233,1) 100%); 
+}
+
+#subcontent {
+    width: 100%;
+    border: 1px solid black;
+}
+
+#forecast {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    position: relative;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    width: 20%;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    width: 80%;
+}
+
+.fore-style {
+    background-color: darkgray;
+    margin: 20px;
+    width: 50vw;
+}
