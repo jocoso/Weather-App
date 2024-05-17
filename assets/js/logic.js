@@ -44,7 +44,7 @@ function set5DaysForecast(data) {
 function setWeatherReport(country_name) {
 
     //const request=`http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=a5c67d2aaec6692b6e8028e144497842`
-    const req = `http://api.openweathermap.org/geo/1.0/direct?q=${country_name}&limit=5&appid=a5c67d2aaec6692b6e8028e144497842`;
+    const req = `https://api.openweathermap.org/geo/1.0/direct?q=${country_name}&limit=5&appid=a5c67d2aaec6692b6e8028e144497842`;
     const key = "a5c67d2aaec6692b6e8028e144497842";
 
 
@@ -67,7 +67,7 @@ function setWeatherReport(country_name) {
 
         const lat = data[0].lat;
         const lon = data[0].lon;
-        const weatherreq = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}`;
+        const weatherreq = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}`;
 
         callApi(weatherreq, (data) => {
             inject("#temp", data.list[0].main.temp + "F", "Temp: ");
